@@ -1,0 +1,50 @@
+.pad
+	@media(max-width: 1000px)
+		padding-left: 50px
+		padding-right: 50px
+	@media(max-width: 775px)
+		padding-left: 20px
+		padding-right: 20px
+	@media(max-width: 340px)
+		padding-left: 10px
+		padding-right: 10px
+
+.w-100-percent
+	width: 100%
+.mw-1000-px
+	max-width: 1000px
+.mw-720px
+	max-width: 720px
+
+.center-container
+	margin: auto
+h3.title
+	color: $title-color
+	font-size: 32px
+	margin: 0
+	padding: 0
+	position: relative
+	display: inline
+	transition: .5s
+	&:after, &:before
+		content: ""
+		display: block
+		position: absolute
+		height: 3px
+		transition: .6s
+		bottom: 0
+	&:after
+		width: 0%
+		background: #888
+	&:before
+		width: 20%
+		background: $title-color
+	&:hover
+		color: #888
+		&:after
+			width: 100%
+h3.title.trigger-animation:before
+	transition: 2s
+	width: 100%
+
+

@@ -1,0 +1,39 @@
+.button, .blank-button
+  padding-left: 30px
+  padding-right: 30px
+  padding-top: 15px
+  padding-bottom: 15px
+  border-radius: 25px
+  transition: .3s
+  font-size: 16px
+  white-space: nowrap
+  @media (max-width: 480px)
+    font-size: 14px
+.small-blank-btn
+  white-space: nowrap
+  padding: 10px 20px 10px 20px
+  border-radius: 100px
+  transition: .3s
+  font-size: 20px
+
+.button.pink
+  background: $hero-pink
+  color: white
+  border: 2px solid $hero-pink
+  &:hover
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16)
+.blank-button.pink
+  border: 2px solid $hero-pink
+  color: $hero-pink
+  background: transparent
+  &:hover
+    background: $hero-pink
+    color: white
+
+.dark-blue
+  border: 2px solid $hero-blue-dark
+  color: $hero-blue-dark
+  background: transparent
+  &:hover
+    background: $hero-blue-dark
+    color: white
